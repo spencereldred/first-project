@@ -1,12 +1,15 @@
 .HelloWorldDom {
     font-size: large;
     text-align: center;
+    background: lightblue;
 }
 
 .HelloWorldDom-left {
     text-align: left;
+    background: lightgreen;
 }
 
 .HelloWorldDom-right {
     text-align: right;
+    background: pink;
 }
