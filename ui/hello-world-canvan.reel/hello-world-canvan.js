@@ -13,5 +13,12 @@ exports.HelloWorldCanvan = Component.specialize(/** @lends HelloWorldCanvan# */ 
         value: function HelloWorldCanvan() {
             this.super();
         }
+    },
+    
+    draw: {
+        value: function() {
+            var canvas = this.element.querySelector('canvas');
+            canvas.getContext("2d").fillText("Hello, World!", 20, 20);
+        }
     }
 });
