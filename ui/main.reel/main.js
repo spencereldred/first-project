@@ -18,6 +18,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     handleIncrementAction: {
         value: function (event) {
             console.log("increment handler");
+            console.log(this);
+            console.log(this.templateObjects);
             var value = Number( this.templateObjects.value.value );
             this.templateObjects.value.value = value + 1;
             
