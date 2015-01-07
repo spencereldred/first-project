@@ -16,7 +16,14 @@
                 "element": {"#": "Decrement"},
                 "enabled": true,
                 "label": "-"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "Increment": {
             "prototype": "digit/ui/button.reel",
