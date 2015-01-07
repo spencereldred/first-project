@@ -19,7 +19,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function (event) {
             console.log("increment handler");
             var value = Number( this.templateObjects.counter.value );
-            this.templateObjects.value.value = value + 1;
+            this.templateObjects.counter.value = value + 1;
             
         }
     },
@@ -28,7 +28,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function (event) {
             console.log("decrement handler");
             var value = Number( this.templateObjects.counter.value );
-            this.templateObjects.value.value = value - 1;
+            this.templateObjects.counter.value = value - 1;
         }
     }
 
