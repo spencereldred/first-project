@@ -10,7 +10,7 @@ var Component = require("montage/ui/component").Component;
  */
 exports.Main = Component.specialize(/** @lends Main# */ {
     constructor: {
-   https://cusyup.project.montagestudio.net/ui/main.reel/     value: function Main() {
+        value: function Main() {
             this.super();
         }
     },
@@ -29,7 +29,5 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.templateObjects.value.element.textcontent = value - 1;
         }
     }
-
-}
 
 });
