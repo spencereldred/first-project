@@ -10,6 +10,13 @@
                 "element": {"#": "owner"}
             }
         },
+        "counter": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "counter"},
+                "value": "0"
+            }
+        },
         "Decrement": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -39,13 +46,6 @@
                     "listener": {"@": "owner"}
                 }
             ]
-        },
-        "value": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "value"},
-                "value": "0"
-            }
         }
     }
     </script>
@@ -53,10 +53,8 @@
 <body>
     <div data-montage-id="owner" class="Main">
         <button data-montage-id="Increment"></button>
-        <p data-montage-id="value"></p>
-        <button data-montage-id="Decrement">
-
-        </button>
+        <p data-montage-id="counter"></p>
+        <button data-montage-id="Decrement"></button>
     </div>
 </body>
 </html>
