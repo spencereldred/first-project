@@ -24,11 +24,19 @@
                 "element": {"#": "Increment"},
                 "enabled": true,
                 "label": "+"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
-        "Value": {
+        "value": {
             "prototype": "montage/ui/text.reel",
             "properties": {
+                "element": {"#": "value"},
                 "value": "0"
             }
         }
@@ -38,7 +46,7 @@
 <body>
     <div data-montage-id="owner" class="Main">
         <button data-montage-id="Increment"></button>
-        <p data-montage-id="text"></p>
+        <p data-montage-id="value"></p>
         <button data-montage-id="Decrement">
 
         </button>
