@@ -9,12 +9,39 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "Decrement": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "Decrement"},
+                "enabled": true,
+                "label": "-"
+            }
+        },
+        "Increment": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "Increment"},
+                "enabled": true,
+                "label": "+"
+            }
+        },
+        "Value": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "value": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Main">
+        <button data-montage-id="Increment"></button>
+        <p data-montage-id="text"></p>
+        <button data-montage-id="Decrement">
+
+        </button>
     </div>
 </body>
 </html>
