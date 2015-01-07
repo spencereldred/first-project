@@ -17,6 +17,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     handleIncrementAction: {
         value: function (event) {
+            console.log("increment handler");
             var value = Number( this.templateObjects.value.element.textContent );
             this.templateObjects.value.element.textcontent = value + 1;
             
@@ -25,6 +26,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     handleDecrementAction: {
         value: function (event) {
+            console.log("decrement handler");
             var value = Number( this.templateObjects.value.element.textContent );
             this.templateObjects.value.element.textcontent = value - 1;
         }
